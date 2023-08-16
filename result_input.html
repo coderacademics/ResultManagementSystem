@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Result Input System</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allura&family=Kaushan+Scrip&family=Merriweather:ital@1&display=swap');
+
+        .form {
+            padding: 2em;
+        }
+
+        label,
+        input {
+            display: block;
+            margin-bottom: 1em;
+            font-size: 1.1em;
+        }
+        label{
+            font-weight: 800;
+        }
+        input{
+            width: 40vw;
+        }
+        button {
+            padding: 0.8em;
+            font-size: 1.2em;
+            border-radius: 5%;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="background-image: url(../resultmanagment/result_input_bg.jpg);">
+    <h2 style="text-align:center;font-family: 'Merriweather', serif;">Welcome to Result Input System</h2>
+    <form method="post" action="../resultmanagment/input_data.php"
+        style="margin-top: 2em; margin-left: 30em; margin-right: 30em; zoom: 0.78; padding: 2em; border-radius: 10px;background-color: white; opacity: 0.75; font-family: 'Merriweather', serif;">
+        <label for="sname">Student Name</label>
+        <input type="text" id="sname" name="sname">
+        <label for="semail">Email address</label>
+        <input type="email" id="semail" name="semail">
+        <label for="DOB">Date of Birth</label>
+        <input type="date" id="DOB" name="DOB">
+        <label for="rollno">Roll No.</label>
+        <input type="text" id="rollno" name="rollno">
+        <label for="class">Class</label>
+        <input type="text" id="class" name="class">
+        <label for="eng_marks">English Marks</label>
+        <input type="number" id="eng_marks" name="compsc_marks">
+        <label for="chem_marks">Chemistry Marks</label>
+        <input type="number" id="chem_marks" name="chem_marks">
+        <label for="phy_marks">Physics Marks</label>
+        <input type="number" id="phy_marks" name="phy_marks">
+        <label for="compsc_marks">Computer Science Marks</label>
+        <input type="number" id="compsc_marks" name="compsc_marks">
+        <label for="maths_marks">Mathematics Marks</label>
+        <input type="number" id="maths_marks" name="compsc_marks">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

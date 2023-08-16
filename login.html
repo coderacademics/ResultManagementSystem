@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RESULTS</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+        body{
+           background-image: url(../resultmanagment/bgimg.jpg) ;
+           background-blend-mode: overlay;
+        }
+        .formContainer{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5em;
+        }
+        .studentform {
+            list-style: none;
+            border: 0.2em solid black;
+            display: inline-block;
+            padding: 3em 5em 4em 5em;
+            border-radius: 0.5em;
+            font-size: 120%;
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .studentform:hover{
+            border:0.25em double black;
+        }
+        .studentform input{
+            padding: 0.3em;
+            border: 2px solid double;
+            border-radius: 5px;
+        }
+        .studentform input:hover{
+            cursor: text;
+            
+        }
+        .teacherform {
+            list-style: none;
+            border: 0.2em solid black;
+            display: inline-block;
+            padding: 3em 5em 4em 5em;
+            border-radius: 0.5em;
+            font-size: 120%;
+            font-family: 'Noto Sans', sans-serif;
+        }
+        .teacherform:hover{
+            border:0.25em double black;
+        }
+        .teacherform input{
+            padding: 0.3em;
+            border: 2px solid double;
+            border-radius: 5px;
+        }
+        .teacherform input:hover{
+            cursor: text;
+        }
+        .studentform li{
+            padding-bottom: 0.7em;
+        }
+        
+        .teacherform li{
+            padding-bottom: 0.7em;
+        }
+        
+        .submit{
+            padding: 2em;
+            border-radius: 10%;
+            background-color: transparent;
+        }
+        .submit:hover{
+            background-color: black;
+            color: white;
+            border-color: white;
+            
+        }
+        </style>
+</head>
+
+<body>
+    <div class="formContainer">
+        <ul class="studentform">
+            <form method="post" action="../resultmanagment/result.php">
+                <h1>Student Login</h1>
+                <li><label for="semail">Student Email ID:</label></li>
+                <li> <input type="text" name="semail" id="semail" placeholder="example@gmail.com"></li>
+                <li> <label for="DOB">Date of Birth(DD-MM-YYYY)</label></li>
+                <li> <input type="date" name="DOB" id="DOB" placeholder="YYYY-MM-DD"></li>
+                <li> <input type="submit" class="submit" value="Get Result"></li>
+            </form>
+        </ul>
+        <ul class="teacherform">
+            <form method="post" action="../resultmanagment/teacher.php">
+                <h1>Teacher Login</h1>
+                <li><label for="temail">Teacher Email ID:</label></li>
+                <li> <input type="text" name="temail" id="temail" placeholder="example@gmail.com"></li>
+                <li> <label for="password">Password</label></li>
+                <li> <input type="password" name="password" id="password" placeholder="Password"></li>
+                <li> <input type="submit" class="submit" value="Login"></li>
+            </form>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+body{
+   background-image: url(../resultmanagment/bgimg.jpg) ;
+   background-blend-mode: overlay;
+}
+.formContainer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+.studentform {
+    list-style: none;
+    border: 0.2em solid black;
+    display: inline-block;
+    padding: 3em 5em 4em 5em;
+    border-radius: 0.5em;
+    font-size: 120%;
+    font-family: 'Noto Sans', sans-serif;
+}
+.studentform:hover{
+    border:0.25em double black;
+}
+.studentform input{
+    padding: 0.3em;
+    border: 2px solid double;
+    border-radius: 5px;
+}
+.studentform input:hover{
+    cursor: text;
+    
+}
+.teacherform {
+    list-style: none;
+    border: 0.2em solid black;
+    display: inline-block;
+    padding: 3em 5em 4em 5em;
+    border-radius: 0.5em;
+    font-size: 120%;
+    font-family: 'Noto Sans', sans-serif;
+}
+.teacherform:hover{
+    border:0.25em double black;
+}
+.teacherform input{
+    padding: 0.3em;
+    border: 2px solid double;
+    border-radius: 5px;
+}
+.teacherform input:hover{
+    cursor: text;
+}
+.studentform li{
+    padding-bottom: 0.7em;
+}
+
+.teacherform li{
+    padding-bottom: 0.7em;
+}
+
+.submit{
+    padding: 2em;
+    border-radius: 10%;
+    background-color: transparent;
+}
+.submit:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+    
+}

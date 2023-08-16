@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allura&family=Kaushan+Scrip&family=Merriweather:ital@1&display=swap');
+        label,input{
+            margin-bottom: 2em;
+            font-size: 2em;
+        }
+        button{
+            font-size: 1.7em;
+            border-radius: 5%;
+            padding: 0.5em;
+        }
+        button:hover{
+            color:white;
+            background-color: black;
+            cursor: pointer;
+        }
+    </style>
+    <title>Result Delete</title>
+</head>
+
+<body style="background-image:url(../resultmanagment/result_input_bg.jpg);">
+    <h2 style="text-align:center;font-family: 'Merriweather', serif; margin-top: 5em;">Welcome to Result Deletion System
+    </h2>
+    <form method="post" class="border border-primary" action="../resultmanagment/delete_result.php"
+        style="margin-top: 2em; margin-left: 30em; margin-right: 30em; zoom: 0.78; padding: 2em; border-radius: 10px;background-color: white; opacity: 0.75; font-family: 'Merriweather', serif;">
+        <div class="mb-3">
+            <label for="rollno">Roll No.</label>
+            <input type="text"  id="rollno" name="rollno">
+        </div>
+        <div class="mb-3">
+            <label for="DOB" >Date of Birth</label>
+            <input type="date" id="DOB" name="DOB">
+        </div>
+        <button type="submit" >Delete</button>
+    </form>
+</body>
+
+</html>

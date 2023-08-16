@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allura&family=Kaushan+Scrip&family=Merriweather:ital@1&display=swap');
+        .form{
+            padding: 2em;
+        }
+        label,input{
+            display: block;
+            margin-bottom: 2em;
+            font-size: 1.7em;
+        }
+        button{
+            padding: 0.8em;
+            font-size: 1.2em;
+            border-radius: 5%;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    <title>Result Update</title>
+    
+</head>
+
+<body style="background-image:url(../resultmanagment/result_input_bg.jpg);">
+    <h1 style="text-align:center;font-family: 'Merriweather', serif; margin-top: 5em;">Welcome to Result Input System
+    </h1>
+    <form method="post" class="form" action="../resultmanagment/result_update.php"
+        style="margin-top: 2em; margin-left: 30em; margin-right: 30em; zoom: 0.78; padding: 2em; border-radius: 10px;background-color: white; opacity: 0.75; font-family: 'Merriweather', serif;">
+        <label for="rollno" >Roll No.</label>
+        <input type="text"id="rollno" name="rollno">
+        <label for="DOB" >Date of Birth</label>
+        <input type="date" id="DOB" name="DOB">
+        <button type="submit">Search</button>
+    </form>
+</body>
+
+</html>
