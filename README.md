@@ -1,6 +1,3 @@
-Certainly! Here's the updated README file with your email address and the corrected table name:
-
----
 
 # School Result Management System
 
